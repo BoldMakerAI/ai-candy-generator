@@ -1,0 +1,5 @@
+{
+  "name": "AI Candy Generator",
+  "description": "An application that uses AI to generate unique candy concepts, complete with a name, description, and an image.",
+  "requestFramePermissions": []
+}
