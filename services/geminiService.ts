@@ -115,7 +115,7 @@ export const generateCandyConcept = async (request: CandyRequest): Promise<Candy
 
   let concept: { name: string; imagePrompt: string; };
   try {
-    const textResponseJson = textGenerationResponse.text.trim();
+    const textResponseJson = textGenerationResponse.text?.trim();
     if (!textResponseJson) {
       throw new Error("The AI returned an empty response for the candy concept. This might be due to a safety filter or an issue with the prompt.");
     }
@@ -162,7 +162,7 @@ export const generateCandyConcept = async (request: CandyRequest): Promise<Candy
     throw new Error('Failed to generate a candy image. The AI returned no candidates.');
   }
   
-  const imagePart = imageResponse.candidates[0].content.parts.find(part => part.inlineData);
+  const imagePart = (imageResponse.candidates[0].content?.parts ?? []).find(part => part.inlineData);
 
   if (!imagePart || !imagePart.inlineData) {
       throw new Error('Failed to generate a candy image. The response did not contain image data, which could be due to a safety filter.');
