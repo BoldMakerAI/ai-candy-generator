@@ -50,7 +50,7 @@ const App: React.FC = () => {
         </div>
       </main>
       <footer className="text-center p-6 text-sm text-gray-500 mt-8">
-<p>Ready to make Candy? Download your ideas, and <a href="https://boldmaker.com/pages/custom-molds"style="color:#000000;"><u>inquire with us here</a>u></a>. We can make your ideas come to your life!</p>       
+<p>Ready to make Candy? Download your ideas, and <a href="https://boldmaker.com/pages/custom-molds"style="color:#000000;"><u>inquire with us here</u></a>. We can make your ideas come to your life!</p>       
        <br></br> 
         <p>Made by <a href="https://boldmaker.com"style="color:#000000;"><u>Bold Maker</u></a>. Designed with fun and flavor.</p>
       </footer>
